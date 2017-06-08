@@ -1,3 +1,4 @@
+
 #**Finding Lane Lines on the Road** 
 
 Reflection
@@ -5,6 +6,8 @@ Reflection
 The pipeline consists of 8 basic steps.
 
 ####Step 1. Input.
+
+
 <img src="https://github.com/MariaSkr/CarND-LaneLines-P1/blob/master/test_images/solidWhiteRight.jpg" width="480" alt="Combined Image" />
 
 
