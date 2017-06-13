@@ -3,7 +3,7 @@
 
 Reflection
 ###1. Pipeline description.
-The pipeline consists of 8 basic steps.
+The pipeline consists of 7 basic steps.
 
 ####Step 1. Input.
 
@@ -48,15 +48,10 @@ Canny transform used to find the edges of the lane lines in an image of the road
 
 
 
-####Step 7 Separate lines by slope.
-m = (Y2 - Y1) / (X2 - X1). I am going to use this equation to organize lines by their slope. It is important to point out that the y-axis is inverted in OpenCV when reading images, so positive slopes will be the right lane and negative slopes will be the left lane. 
+####Step 7 Finding Lane Lines on the Road.
 
-####Step 8 Extending Hough Lines into a Single Unified Lane.
 
-Now I need to piece together lines and unify them into the best estimate for the lane line location. For this:
-1) Line outliers are removed (e.g flat lines or lines that deviate significantly from the man)
-2) Lines are merged by the mean of their endpoints. 
-3) Endpoints are extended off the image canvas. 
+<img src="https://github.com/MariaSkr/CarND-LaneLines-P1/blob/master/test_images/output_correct1.jpg" width="480" alt="Combined Image" />
 
 
 ###3. Possible improvements to the pipeline
